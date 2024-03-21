@@ -1,9 +1,13 @@
 #include <stdio.h>
 
+int esPar(int numero){
+    return numero % 2 == 0;
+}
+
 void pares(int entrada[], int cantidadElementos, int salida[]){
   int i, j = 0;  
   for (i = 0; i < cantidadElementos; i++) { 
-    if (entrada[i] % 2 == 0) { 
+    if (esPar(entrada[i])) { 
         salida[j] = entrada[i]; 
         j = j + 1; 
     }
